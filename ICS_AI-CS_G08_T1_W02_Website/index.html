@@ -1,0 +1,151 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Grade 8 Week 2 — AI Conceptual Understanding - Understanding the System</title><style>*{box-sizing:border-box}body{margin:0;background:#f5f8fb;color:#183044;font:17px/1.55 Arial,sans-serif}header{background:linear-gradient(125deg,#123b5d,#1d7199);color:white;padding:24px clamp(18px,5vw,64px)}header h1{line-height:1.15;max-width:900px}.brand{display:flex;align-items:center;gap:13px}.brand img{width:48px;height:48px;object-fit:contain;background:white;border-radius:50%;padding:3px}.wrap{max-width:950px;margin:auto;padding:18px}nav,.row{display:flex;gap:9px;flex-wrap:wrap;align-items:center}button,.btn{border:0;border-radius:10px;padding:11px 16px;background:#123b5d;color:white;font-weight:bold;cursor:pointer;text-decoration:none}button:focus-visible,a:focus-visible,textarea:focus-visible{outline:3px solid #d39d20;outline-offset:2px}.secondary{background:#e2ecf2;color:#123b5d;border:1px solid #b8cbd7}.card{background:white;border:1px solid #dae4eb;border-radius:16px;padding:22px;margin:14px 0}.step{display:none}.step.active{display:block}.bar{height:9px;background:#d8e4eb;border-radius:9px;overflow:hidden}.bar span{display:block;height:100%;background:#bd9a4a;width:0}.source{white-space:pre-wrap;max-height:540px;overflow:auto;background:#f7fafb;padding:14px;border-radius:8px;font-size:15px}textarea{display:block;width:100%;min-height:86px;border:1px solid #9fb2bf;border-radius:9px;padding:12px;font:inherit}.feedback,.badge{display:none;background:#e8f5ec;border-left:5px solid #176d54;padding:12px;margin:10px 0}.frame{width:100%;height:640px;border:1px solid #9fb2bf;border-radius:10px}details summary{font-weight:bold;cursor:pointer}.small{font-size:.9rem;color:#526b7a}footer{text-align:center;color:#617889;padding:20px}@media(max-width:600px){body{font-size:16px}.card{padding:16px}.frame{height:500px}}</style></head><body><header><div class="brand"><img src="ics-logo.png" alt="International Community Schools logo"><strong>ICS · AI/CS · Khawla Banydomi</strong></div><h1>AI Conceptual Understanding - Understanding the System</h1><p>Grade 8 · Main Course · Term 1 · Week 2 · Core + Lab, two 45-minute periods</p></header><main class="wrap"><nav aria-label="Lesson navigation"><button class="secondary" data-back>Back</button><span id="count"></span><button data-next>Next</button><button class="secondary" id="reset">Reset answers</button></nav><div class="bar" role="progressbar" aria-label="Lesson progress"><span id="progress"></span></div>
+<section class="step active card"><h2>Safeguarding and responsible use</h2><p>Do not enter names, faces, voices, Emirates ID numbers, or other personal or sensitive information into any tool. Follow your teacher’s instructions. Use the printed or teacher-operated option; no student account is needed.</p><button data-next>Start</button></section>
+<section class="step card"><h2>Starter</h2><div class="source">Hook / 6 min Show two contrasting worked examples Watch and call out the input What is happening in the middle
+ on the board - a translation and an and the output for each that you cannot see?
+ image classifier - and think aloud about example.
+ what goes in and what comes out of
+ each.
+Direct teach / 12 Draw the pipeline - input, model, output Copy the pipeline diagram Where did the model get its
+min - as a labelled diagram; we-do one and help label the worked behaviour from?
+ worked example together, naming what example.
+ the trained model did to the input.
+Guided Hand out three pre-generated worked In pairs, trace each example How did this exact input turn into
+investigate / 13 examples; model tracing the first, then and write the input, what the that exact output?
+min release pairs to map input, process and model did, and the output.
+ output on the other two.
+Pair explain / 9 Prompt partners to explain one Take turns explaining to a Which stage would you change to
+min example using reasoning words partner how the input get a different output?
+ (because, so, since); circulate and became the output, in order.
+ listen for a clear cause-and-effect link.
+Check and close Collect the e</div><label for="starter">Write a prediction or question:</label><textarea id="starter"></textarea><button data-next>Continue</button></section>
+<section class="step card"><h2>Learning objectives and success criteria</h2><ul><li>Describe how an AI system processes inputs and generates outputs, naming each stage of the pipeline.</li><li>Apply this understanding in a hands-on task by mapping how an input becomes an output, and explain the reasoning</li><li>Use the key vocabulary of AI Conceptual Understanding accurately, and connect the input-model-output idea to building</li></ul><h3>I can…</h3><ul><li>I can name the stages an AI system uses to turn an input into an output.</li><li>I can trace a worked example and explain to a partner how the input became the output.</li><li>I can use words like input, model and output correctly, and say how they help me evaluate a solution.</li></ul><button data-next>Continue</button></section>
+<section class="step card"><h2>Explanation and examples</h2><div class="source">An AI system is a pipeline. It receives an input (data such as text, an image or a sensor reading), passes it through a proce ss
+- a trained model that applies patterns learned from many examples - and returns an output (a prediction, a label or
+generated content). Understanding the system means naming each stage and reasoning about how one becomes the next:
+the model does not grasp meaning, it maps inputs to statistically likely outputs. For Grade 8 this matters because the unit&#x27;s
+goal is to evaluate and improve models. You cannot judge whether an output is good, or improve it, until you can see the
+stages it came from and identify where the result was shaped - by the input given, the data the model learned from, or the
+way the system was designed.
+
+Training, inference and evaluation (teacher background)
+Machine learning (ML) means building a model by learning patterns from a dataset instead of writing fixed rules by hand. The
+dataset splits into TRAINING DATA (the examples the model learns from) and TEST DATA (separate, new examples kept
+back to check it - never test on a training example). Three actions matter: TRAINING is teaching the model from the training
+data; INFERENCE is one forward run that turns a new input into an output; EVALUATION is measuring the outputs against
+your criteria using the test data. If you change the training examples and train again, the result is a NEW, retrained model -
+not the same one. Students train their first model, and meet these terms in practice, in today&#x27;s Lab.
+
+ The same pipeline inside one worked example.</div><h3>Source activity</h3><div class="source">Hands-on activity guide
+Overview: Students investigate three teacher-provided worked examples, map how each input becomes an output through
+a trained model, and explain the reasoning to a partner.
+Grouping / timing: Pairs for the investigate and explain; whole class for the debrief.
+Tool: A teacher-operated board demo with a curated, pre-generated set of example inputs and outputs - no accounts and
+no live typing by students - so the class studies safe, prepared results and no personal data is ever entered.
+Facilitation steps:
+1. Look at the worked example your teacher shows on the board.
+2. Write down the input - the exact data that went in.
+3. Describe what the model does to it and write it next to Process.
+4. Write down the output - the exact result that came out.
+5. Explain to your partner how the input became the output, in order.
+6. Check one output against the task and a trusted source - does it really answer it?
+Unplugged fallback: Simulated-AI cards: a &#x27;model&#x27; envelope holds a fixed rule matched to example cards. A student posts
+an input card in and the envelope returns the matching output card - the same pipeline with no device and no accounts.
+
+Formative assessment (aligned to the objectives)
+ Task / item Model response Marking note
+ Label a new worked example (an email Input: the incoming email text. Process: a Award full marks when all three
+ spam filter) with input, process and trained model compares it with patterns from stages are correct and in order;
+ output. many past emails. Output: the label spam or naming only input and output is
+ not spam. partial.
+ Explain to a partner how the input The input went into the model, which used Listen for cause-and-effect
+ became the output for the board patterns learned from data to change it, so reasoning linking the stages, not
+ example. the output appeared; a different input would just the three names.
+ have produced a different output.
+ Use input, model and output correctly in In a litter-sorting idea the input is a photo of Vocabulary used accurately and
+ one sentence about a solution you could an item, the model decides the material, and in order with a link to building or
+ build or evaluate. the output is the correct bin - I would evaluating; gently correct any
+ evaluate it by checking the outputs against stage that is swapped.
+ the real items.
+
+• Targets: the Emerging outcome - describes how an AI system processes inputs and generates outputs.
+• Check: partner explanation plus a labelled exit ticket, sampled by cold-call.
+• Success criteria: the student names each stage in order and explains how the input became the output through the model.
+• Evidence: the completed trace table and the one-sentence explanation on the worksheet.
+• Feedback / adjustment: if a stage is swapped or the model is called &#x27;magic&#x27;, re-run the board example and ask the student to
+name what the model did before writing again.
+
+Differentiation
+ Criterion Emerging (expected) Approaching Not yet
+ Names the stages Names input, process (model) and Names the stages but Names only one or two
+ output in the correct order muddles the order stages
+ Explains the sequence Explains clearly how the input Describes the stages but the Lists stages with no link
+ became the output through the link is vague between them
+ model
+ Uses vocabulary and Uses input, model and output Uses the words with Avoids or misuses the
+ connects accurately and links them to prompting words
+ building or evaluating a solution
+
+Representation: pair the pipeline diagram with a concrete worked example so the stages are available visually, verbally and
+through a traced item.
+Action and expression: let students show understanding by labelling, speaking to a partner or arranging physical cards, not only by
+writing; extend confident pairs by asking which factor - the input, the data the model learned from, or the design - most changed
+the output.
+People of Determination: provide a pre-labelled stage strip and sentence starters (&#x27;The input is ...&#x27;, &#x27;The model ...&#x27;); allow extra time
+and a calm partner for the explain step.</div><button data-next>Try the practice</button></section>
+<section class="step card"><h2>Interactive practice</h2><p>Describe how an AI system processes inputs and generates outputs, naming each stage of the pipeline.</p><label for="practice">Explain your answer with an example and reason:</label><textarea id="practice"></textarea><div class="row"><button id="check">Check my response</button><button class="secondary" id="modelbtn">Show source guidance</button></div><div id="feedback" class="feedback" role="status" aria-live="polite"></div><details id="model" hidden><summary>Teacher Pack model guidance</summary><div class="source">Use the teacher pack answer key after completing your own response.</div></details><button data-next>Continue</button></section>
+<section class="step card"><h2>Week 2 - Core - Worksheet | AI Conceptual Understanding - Understanding the</h2><p>The original worksheet pages are preserved in order and embedded below. Download the PDF to print or complete it on paper.</p><a class="btn secondary" download href="ICS_AI-CS_G08_T1_W02_Worksheet.pdf">Download original worksheet PDF</a><iframe class="frame" title="Original worksheet pages" src="ICS_AI-CS_G08_T1_W02_Worksheet.pdf"></iframe><details><summary>Text extracted from the original worksheet pages</summary><div class="source">Week 2 - Core - Worksheet | AI Conceptual Understanding - Understanding the
+System
+Name: __________________________________ Class: ________________ Date: ____________
+
+Trace the pipeline
+Fill in the three stages for the worked example your teacher showed.
+ Stage What happens in the worked example
+ Input
+ Process (model)
+ Output
+
+Explain the reasoning
+Write one or two sentences explaining how the input became the output. Use because or so.
+____________________________________________________________________________________________
+____________________________________________________________________________________________
+____________________________________________________________________________________________
+
+Spot the stage
+Read each line and write which stage it describes: input, process or output.
+ Example Which stage?
+ A voice recording sent to a speech app
+ The model matches the sounds to words it learned
+ The typed sentence appears on screen
+
+Exit ticket
+Name the stages of an AI pipeline in order, give one example of an input, and say what the model in the middle does.
+____________________________________________________________________________________________
+____________________________________________________________________________________________
+
+Challenge (stretch)
+Challenge (stretch) - Explain how three different factors - the input given, the data the model learned from, and the way the
+system was designed - could each change how well the output performs. Use the word pipeline.
+____________________________________________________________________________________________
+____________________________________________________________________________________________</div></details><label for="worksheet">Worksheet response notes (optional):</label><textarea id="worksheet"></textarea><button data-next>Continue to the separate post-assessment</button></section>
+<section class="step card"><h2>Separate post-assessment</h2><p>Answer independently in your own words. These prompts align to today’s objectives and are not automatically graded.</p><label for="post0">Describe how an AI system processes inputs and generates outputs, naming each stage of the pipeline.</label><textarea id="post0"></textarea><label for="post1">Apply this understanding in a hands-on task by mapping how an input becomes an output, and explain the reasoning</label><textarea id="post1"></textarea><label for="post2">Use the key vocabulary of AI Conceptual Understanding accurately, and connect the input-model-output idea to building</label><textarea id="post2"></textarea><p class="small">Responses stay in this browser page unless you download them. Nothing is sent to your teacher.</p><button data-next>Finish</button></section>
+<section class="step card"><h2>Exit ticket and reflection</h2><div class="source">Check and close Collect the exit ticket; recap the Complete the exit ticket Name the stages of the pipeline in
+/ 5 min pipeline and preview that the Lab will naming the stages and one order - go.
+ trace and compare how the system example input.
+ behaves when a factor changes.
+
+Anticipated misconceptions
+ Misconception How to address it
+ The model in the middle understands the question the way Explain that the model maps inputs to likely outputs using
+ a person does. patterns learned from data; it matches, it does not understand.
+ Re-voice it as &#x27;it predicts, it does not know&#x27;.
+ The output is correct because a computer produced it. Show a confident but wrong pre-generated output next to a
+ correct one and model verify-before-trust: check every output
+ against the task and a trusted source, because a confident output
+ can still be wrong.
+ The system is one solid black box with no stages worth Trace one item slowly on the board so students see three distinct
+
+ separating. stages; stress that separating them is exactly what lets you find
+ and fix where a result went wrong.
+
+Hands-on activity guide
+Overview: Students investigate three teacher-provided worked examples, map how each input</div><label for="exit">One thing I learned / one question I still have:</label><textarea id="exit"></textarea><div class="row"><button id="finish">Mark complete on this device</button><button class="secondary" id="download">Download my typed responses</button></div><div id="badge" class="badge" role="status">Lesson complete on this device. This is not a teacher submission or saved school record.</div></section><footer>ICS AI/CS · Grade 8 · Term 1 · Week 2</footer></main><script>let step=0;const steps=[...document.querySelectorAll(".step")];function go(n){step=Math.max(0,Math.min(n,steps.length-1));steps.forEach((x,i)=>x.classList.toggle("active",i===step));document.getElementById("progress").style.width=((step+1)/steps.length*100)+"%";document.getElementById("count").textContent="Section "+(step+1)+" of "+steps.length;window.scrollTo({top:0,behavior:"smooth"})}document.querySelectorAll("[data-next]").forEach(b=>b.onclick=()=>go(step+1));document.querySelectorAll("[data-back]").forEach(b=>b.onclick=()=>go(step-1));document.getElementById("check").onclick=()=>{let v=document.getElementById("practice").value.trim(),f=document.getElementById("feedback");f.style.display="block";f.textContent=v.length<12?"Add a complete idea and a reason, then try again.":"Good start. Check that you used a lesson term, gave an example, and explained why it fits. This is guidance, not a saved or graded result."};document.getElementById("modelbtn").onclick=()=>document.getElementById("model").hidden=!document.getElementById("model").hidden;document.getElementById("download").onclick=()=>{let s=[...document.querySelectorAll("textarea")].map((x,i)=>"Response "+(i+1)+":\n"+x.value).join("\n\n");let a=document.createElement("a");a.href=URL.createObjectURL(new Blob([document.title+"\n\n"+s],{type:"text/plain"}));a.download="AI-CS-Lesson-Responses.txt";a.click();URL.revokeObjectURL(a.href)};document.getElementById("reset").onclick=()=>{document.querySelectorAll("textarea").forEach(x=>x.value="");document.getElementById("badge").style.display="none";go(0)};document.getElementById("finish").onclick=()=>{document.getElementById("badge").style.display="block"};go(0);</script></body></html>
